@@ -19,8 +19,16 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "crescer",
       "styles": [
-        "styles.css"
+        "styles.scss"
       ],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          ".",
+          "../node_modules",
+          "../node_modules/@material/*",
+          "styles"
+        ]
+      },
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -54,7 +62,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }
