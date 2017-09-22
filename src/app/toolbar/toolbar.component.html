@@ -1,0 +1,20 @@
+<mdc-toolbar [fixed]="true">
+  <mdc-toolbar-row>
+    <mdc-toolbar-section [alignStart]="true">
+      <button material-icon mdc-toolbar-icon-menu (click)="handleMenuClick();">menu</button>
+      <mdc-toolbar-title>Crescer</mdc-toolbar-title>
+    </mdc-toolbar-section>
+  </mdc-toolbar-row>
+</mdc-toolbar>
+<mdc-temporary-drawer #drawer>
+  <mdc-temporary-drawer-spacer>Angular MDC</mdc-temporary-drawer-spacer>
+  <mdc-temporary-drawer-content>
+    <mdc-list-group>
+      <mdc-list>
+        <mdc-list-item *ngFor="let link of links" [routerLink]="[link.route]">
+          <i material-icon mdc-list-item-start>{{link.icon}}</i>{{link.name}}
+        </mdc-list-item>
+      </mdc-list>
+    </mdc-list-group>
+  </mdc-temporary-drawer-content>
+</mdc-temporary-drawer>
