@@ -4,7 +4,7 @@ import { Student } from './student.model';
 import { students } from './students.mock';
 
 @Injectable()
-export class UserService {
+export class StudentService {
     private students: Student[];
 
     constructor() {
