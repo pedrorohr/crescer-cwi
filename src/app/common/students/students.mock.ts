@@ -1,4 +1,6 @@
-export const students = [
+import { Student } from './student.model';
+
+export const students: Student[] = [
     { id: 0, firstName: 'Pedro', lastName: 'Rohr', user: 'pedro.rohr', phone: '5551998310615', gravatar: '89fc41e15b580a0bb6de64ebd9ad82d0' },
     { id: 1, firstName: 'Leandro', lastName: 'Paz', user: 'leandro.paz', phone: '5551999396738', gravatar: 'd49fcd7317b0a16011cd0f57cbf047df' },
     { id: 2, firstName: 'Luan', lastName: 'Avila', user: 'luan.avila', phone: '5551982580230', gravatar: 'd49fcd7317b0a16011cd0f57cbf047df' },
