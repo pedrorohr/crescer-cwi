@@ -1,0 +1,31 @@
+.crescer-temporary-drawer {
+    text-transform: uppercase;
+    padding-left: 16px;
+//    background-color: #fafafa;  
+}
+
+/*
+.crescer-temporary-drawer-header {
+    background: url(assets/img/logo_parking_lg.png) 32px 32px no-repeat;
+    background-size: 30%;
+}
+*/
+
+.crescer-temporary-drawer-header::before {
+    padding-top: 30%;    
+}
+
+/*
+.crescer-temporary-drawer-content {
+    background: url(assets/img/logo_parking_lg.png) -1px bottom no-repeat;
+    background-size: 50%;
+}
+*/
+
+.crescer-temporary-drawer-list-item {
+    height: 32px;
+    padding-left: 32px;
+    letter-spacing: .2em;
+    text-decoration: inherit;
+}
+  

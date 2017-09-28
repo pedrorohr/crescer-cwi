@@ -1,8 +1,12 @@
-<mdc-card>
+<mdc-card class="crescer-member-card">
+  <mdc-card-horizontal>
+    <img mdc-card-media-item src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" />
     <mdc-card-primary>
       <h1 mdc-card-title>{{ student.firstName }}</h1>
     </mdc-card-primary>
-    <mdc-card-supporting-text>
+    <mdc-card-subtitle>
       {{ student.user }}
-    </mdc-card-supporting-text>
-  </mdc-card>
+    </mdc-card-subtitle>
+  </mdc-card-horizontal>
+  <mdc-card-actions></mdc-card-actions>    
+</mdc-card>

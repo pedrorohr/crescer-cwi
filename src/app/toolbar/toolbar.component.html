@@ -6,12 +6,12 @@
     </mdc-toolbar-section>
   </mdc-toolbar-row>
 </mdc-toolbar>
-<mdc-temporary-drawer #drawer>
-  <mdc-temporary-drawer-spacer>Angular MDC</mdc-temporary-drawer-spacer>
+<mdc-temporary-drawer class="crescer-temporary-drawer" #drawer>
+  <mdc-temporary-drawer-header class="crescer-temporary-drawer-header"></mdc-temporary-drawer-header>
   <mdc-temporary-drawer-content>
     <mdc-list-group>
       <mdc-list>
-        <mdc-list-item *ngFor="let link of links" [routerLink]="[link.route]">
+        <mdc-list-item class="crescer-temporary-drawer-list-item" *ngFor="let link of links" [routerLink]="[link.route]">
           <i material-icon mdc-list-item-start>{{link.icon}}</i>{{link.name}}
         </mdc-list-item>
       </mdc-list>
