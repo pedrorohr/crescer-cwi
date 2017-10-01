@@ -1,1 +1,8 @@
-<crescer-member *ngFor="let student of students" [student]="student"></crescer-member>
+<mdc-list>
+    <mdc-list-item class="crescer-list-item" [mdc-elevation]="1" *ngFor="let student of students">
+        <img mdc-list-item-start src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" />
+        <span mdc-typography-title>{{ student.firstName + ' ' + student.lastName }}</span>
+    </mdc-list-item>
+</mdc-list>
+
+
