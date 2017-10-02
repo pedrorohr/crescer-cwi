@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MembersComponent } from './members/members.component';
 import { StudentService } from './common/students/student.service';
+import { SeatingMapComponent } from './seating-map/seating-map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    MembersComponent
+    MembersComponent,
+    SeatingMapComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,61 @@
+<div #myDiv class="crescer-class-floor-plan" [ngStyle]="classFloorPlan">
+  <div class="crescer-class-floor-plan-intructor">
+
+  </div>
+  <div class="crescer-class-floor-plan-three">
+    <div class="crescer-class-floor-plan-three-left">
+        <img src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" 
+        alt="{{ student.firstName + ' ' + student.lastName }}" 
+        title="{{ student.firstName + ' ' + student.lastName }}"
+        [mdc-elevation]="5"
+        *ngFor="let student of getFirstRowFirstColumn()"/>
+    </div>
+    <div class="crescer-class-floor-plan-three-right">
+        <img src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" 
+        alt="{{ student.firstName + ' ' + student.lastName }}" 
+        title="{{ student.firstName + ' ' + student.lastName }}"
+        [mdc-elevation]="5"
+        *ngFor="let student of getFirstRowSecondColumn()"/>
+    </div>
+  </div>
+  <div class="crescer-class-floor-plan-three">
+    <div class="crescer-class-floor-plan-three-left">
+        <img src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" 
+        alt="{{ student.firstName + ' ' + student.lastName }}" 
+        title="{{ student.firstName + ' ' + student.lastName }}"
+        [mdc-elevation]="5"
+        *ngFor="let student of getSecondRowFirstColumn()"/>
+    </div>
+    <div class="crescer-class-floor-plan-three-right">
+        <img src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" 
+        alt="{{ student.firstName + ' ' + student.lastName }}" 
+        title="{{ student.firstName + ' ' + student.lastName }}"
+        [mdc-elevation]="5"
+        *ngFor="let student of getSecondRowSecondColumn()"/>
+    </div>
+  </div>
+  <div class="crescer-class-floor-plan-three">
+    <div class="crescer-class-floor-plan-three-left">
+        <img src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" 
+        alt="{{ student.firstName + ' ' + student.lastName }}" 
+        title="{{ student.firstName + ' ' + student.lastName }}"
+        [mdc-elevation]="5"
+        *ngFor="let student of getThirdRowFirstColumn()"/>
+    </div>
+    <div class="crescer-class-floor-plan-three-right">
+        <img src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" 
+        alt="{{ student.firstName + ' ' + student.lastName }}" 
+        title="{{ student.firstName + ' ' + student.lastName }}"
+        [mdc-elevation]="5"
+        *ngFor="let student of getThirdRowSecondColumn()"/>
+    </div>
+  </div>
+  <div class="crescer-class-floor-plan-seven">
+      <img src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" 
+           alt="{{ student.firstName + ' ' + student.lastName }}" 
+           title="{{ student.firstName + ' ' + student.lastName }}"
+           [mdc-elevation]="5"
+           *ngFor="let student of getLastRow()"/>
+  </div>
+  <div class="crescer-class-floor-plan-monitor"></div>
+</div>

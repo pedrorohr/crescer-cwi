@@ -1,0 +1,76 @@
+img {
+    border-radius: 50%;
+    height: 62px;
+    width: 62px;
+}
+
+.crescer-class-floor-plan {
+    margin-top: 70px; 
+    background-image: url('../../assets/img/seating_plan.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.crescer-class-floor-plan-intructor {
+    height: 100px;
+}
+
+.crescer-class-floor-plan-three {
+    height: 200px;
+}
+
+.crescer-class-floor-plan-three-left {
+    text-align: center;    
+    width: 50%;
+    height: 100%;
+    float: left;
+    transform: rotate(15deg);
+
+    img {
+        margin-right: 11px;
+        margin-top: 75px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.crescer-class-floor-plan-three-right {
+    text-align: center;    
+    width: 50%;
+    height: 100%;
+    float: right;
+    transform: rotate(-15deg);
+
+    img {
+        margin-right: 11px;
+        margin-top: 75px; 
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.crescer-class-floor-plan-seven {
+    height: 150px;
+    text-align: center;
+
+    img {
+        margin-right: 11px;
+        margin-top: 75px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.crescer-class-floor-plan-monitor {
+    height: 150px;
+}
