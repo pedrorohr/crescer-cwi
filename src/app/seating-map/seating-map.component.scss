@@ -2,10 +2,18 @@ img {
     border-radius: 50%;
     height: 62px;
     width: 62px;
+    margin-right: 11px;
+    margin-top: 75px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .crescer-class-floor-plan {
-    margin-top: 70px; 
+    width: 600px;
+    height: 1000px;
+    margin-top: 78px; 
     background-image: url('../../assets/img/seating-plan.svg');
     background-position: top center;
     background-repeat: no-repeat;
@@ -29,15 +37,6 @@ img {
     height: 100%;
     float: left;
     transform: rotate(15deg);
-
-    img {
-        margin-right: 11px;
-        margin-top: 75px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
 }
 
 .crescer-class-floor-plan-three-right {
@@ -46,31 +45,76 @@ img {
     height: 100%;
     float: right;
     transform: rotate(-15deg);
-
-    img {
-        margin-right: 11px;
-        margin-top: 75px; 
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
 }
 
 .crescer-class-floor-plan-seven {
     height: 150px;
     text-align: center;
-
-    img {
-        margin-right: 11px;
-        margin-top: 75px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
 }
 
 .crescer-class-floor-plan-monitor {
     height: 150px;
+}
+
+@media only screen and (max-width: 620px) {
+    img {
+        height: 48px;
+        width: 48px;
+        margin-right: 7px;
+        margin-top: 57px;
+    }
+    
+    .crescer-class-floor-plan {
+        margin-top: 70px;
+        border-radius: 7px;
+        width: 450px;
+        height: 750px;
+    }
+
+    .crescer-class-floor-plan-intructor {
+        height: 75px;
+    }
+    
+    .crescer-class-floor-plan-three {
+        height: 150px;
+    }
+        
+    .crescer-class-floor-plan-seven {
+        height: 113px;
+    }
+    
+    .crescer-class-floor-plan-monitor {
+        height: 112px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    img {
+        height: 32px;
+        width: 32px;
+        margin-right: 4px;
+        margin-top: 37px;
+}
+
+    .crescer-class-floor-plan {
+        border-radius: 5px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .crescer-class-floor-plan-intructor {
+        height: 50px;
+    }
+    
+    .crescer-class-floor-plan-three {
+        height: 100px;
+    }
+        
+    .crescer-class-floor-plan-seven {
+        height: 113px;
+    }
+    
+    .crescer-class-floor-plan-monitor {
+        height: 112px;
+    }
 }

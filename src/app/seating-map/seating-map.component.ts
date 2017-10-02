@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Student } from './../common/students/student.model';
 import { StudentService } from './../common/students/student.service';
@@ -10,29 +10,12 @@ import { StudentService } from './../common/students/student.service';
 })
 export class SeatingMapComponent implements OnInit {
 
-  @ViewChild('myDiv')
-  myDiv: ElementRef;
-
-  public classFloorPlan;
-  planWidth: number;
-  planHeight: number;
-
   public students: Student[];
 
   constructor(private studentService: StudentService) { }
 
   ngOnInit() {
     this.students = this.studentService.getStudents();
-    console.log(this.myDiv.nativeElement.offsetWidth);
-    this.planWidth = Math.min(this.myDiv.nativeElement.offsetWidth, 600);
-    console.log(this.planWidth);
-    this.planHeight = this.planWidth / 600 * 1000;
-    console.log(this.planHeight);
-    this.classFloorPlan = {
-      'width.px' : this.planWidth,
-      'height.px' : this.planHeight
-    };
-    console.log(this.classFloorPlan);
   }
 
   public getFirstRowFirstColumn(): Student[] {
