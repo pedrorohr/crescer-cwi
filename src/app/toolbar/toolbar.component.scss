@@ -1,26 +1,37 @@
+.crescer-toolbar {
+    background-color: var(--mdc-theme-background);
+    color: var(--mdc-theme-text-primary-on-background);      
+}
+
+.crescer-menu-icon {
+    text-decoration: none;
+    color: inherit;
+
+    &:visited, &:focus, &:active {
+        color: var(--mdc-theme-text-primary-on-background);
+    }
+}
+
+.crescer-logo {
+    background: url('../../assets/img/logo-cwi-crescer-03.png') left center no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
 .crescer-temporary-drawer {
     text-transform: uppercase;
     padding-left: 16px;
-//    background-color: #fafafa;  
 }
 
-/*
 .crescer-temporary-drawer-header {
-    background: url(assets/img/logo_parking_lg.png) 32px 32px no-repeat;
-    background-size: 30%;
-}
-*/
+    padding-left: 20px;
+    padding-bottom: 20px;
 
-.crescer-temporary-drawer-header::before {
-    padding-top: 30%;    
+    &:before {
+        padding-top: 20%;    
+    }
 }
-
-/*
-.crescer-temporary-drawer-content {
-    background: url(assets/img/logo_parking_lg.png) -1px bottom no-repeat;
-    background-size: 50%;
-}
-*/
 
 .crescer-temporary-drawer-list-item {
     height: 32px;
