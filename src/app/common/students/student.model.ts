@@ -5,4 +5,5 @@ export class Student {
     user: string;
     phone: string;
     gravatar: string;
+    position: number;
 }
