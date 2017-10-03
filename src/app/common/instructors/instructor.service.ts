@@ -20,6 +20,8 @@ export class InstructorService {
     }
 
     private init(): void {
-        this.instructors = instructors;
+        this.instructors = instructors.sort(
+            (instructorA, instructorB) => (instructorA.firstName + ' ' + instructorA.lastName).
+                             localeCompare(instructorB.firstName + ' ' + instructorB.lastName));
     }
 }
