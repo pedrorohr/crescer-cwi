@@ -30,7 +30,7 @@ export class MembersComponent implements OnInit {
           student => (student.firstName + ' ' + student.lastName)
                       .toLocaleLowerCase().indexOf(lowerCasedSearchText) > -1
     );
-    this.filteredInstructors = this.students.filter(
+    this.filteredInstructors = this.instructors.filter(
       instructor => (instructor.firstName + ' ' + instructor.lastName)
                   .toLocaleLowerCase().indexOf(lowerCasedSearchText) > -1
 );
