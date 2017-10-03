@@ -1,8 +1,20 @@
-<mdc-list>
-    <mdc-list-item class="crescer-list-item" [mdc-elevation]="1" *ngFor="let student of students">
-        <img mdc-list-item-start src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" />
-        <span mdc-typography-title>{{ student.firstName + ' ' + student.lastName }}</span>
-    </mdc-list-item>
-</mdc-list>
-
-
+<div class="crescer-container">
+    <div class="crescer-search-area">
+        <mdc-textfield
+            class="crescer-search-input"
+            label="Search member"
+            (focusin)="toggleSearchIcon()"
+            (focusout)="toggleSearchIcon()"
+            (input)="searchMember($event.target.value)">
+        </mdc-textfield>
+        <i material-icon class="crescer-search-icon" [ngClass]="{'crescer-search-icon-focus': searchIconFocus}">search</i>
+    </div>
+    <div>
+        <mdc-list>
+            <mdc-list-item class="crescer-list-item" [mdc-elevation]="1" *ngFor="let student of filteredStudents">
+                <img mdc-list-item-start src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" />
+                <span mdc-typography-title>{{ student.firstName + ' ' + student.lastName }}</span>
+            </mdc-list-item>
+        </mdc-list>
+    </div>
+</div>

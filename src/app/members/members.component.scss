@@ -1,3 +1,29 @@
+.crescer-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.crescer-search-area {
+    position: relative;
+}
+
+.crescer-search-input {
+    width: 100%;
+    padding-right: 32px;
+}
+
+.crescer-search-icon {
+    position: absolute;
+    bottom: 16px;
+    right: 4px;
+    color: var(--mdc-theme-text-hint-on-light);
+}
+
+.crescer-search-icon-focus {
+    color: var(--mdc-theme-primary);
+}
+
+
 .crescer-list-item {
     border-radius: 4px;
     margin-bottom: 8px;
