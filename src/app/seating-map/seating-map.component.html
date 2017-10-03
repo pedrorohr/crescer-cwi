@@ -1,6 +1,10 @@
 <div class="crescer-class-floor-plan">
   <div class="crescer-class-floor-plan-intructor">
-
+    <img src="https://s.gravatar.com/avatar/{{ instructor.gravatar }}?s=80&d=mm" 
+    alt="{{ instructor.firstName + ' ' + instructor.lastName }}" 
+    title="{{ instructor.firstName + ' ' + instructor.lastName }}"
+    [mdc-elevation]="5"
+    *ngFor="let instructor of getInstructor()"/>
   </div>
   <div class="crescer-class-floor-plan-three">
     <div class="crescer-class-floor-plan-three-left">

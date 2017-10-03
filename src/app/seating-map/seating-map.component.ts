@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Instructor } from './../common/instructors/instructor.model';
+import { InstructorService } from './../common/instructors/instructor.service';
 import { Student } from './../common/students/student.model';
 import { StudentService } from './../common/students/student.service';
 
@@ -10,12 +12,19 @@ import { StudentService } from './../common/students/student.service';
 })
 export class SeatingMapComponent implements OnInit {
 
+  public instructors: Instructor[];
   public students: Student[];
 
-  constructor(private studentService: StudentService) { }
+  constructor(private studentService: StudentService, private instructorService: InstructorService) { }
 
   ngOnInit() {
     this.students = this.studentService.getStudents();
+    this.instructors = this.instructorService.getInstructors();
+  }
+
+  public getInstructor(): Instructor[] {
+    return this.instructors
+    .filter(instructor => instructor.position === 100);
   }
 
   public getFirstRowFirstColumn(): Student[] {
