@@ -5,10 +5,11 @@ import { MaterialModule } from '@angular-mdc/web';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import { InstructorService } from './common/instructors/instructor.service';
 import { MembersComponent } from './members/members.component';
 import { StudentService } from './common/students/student.service';
 import { SeatingMapComponent } from './seating-map/seating-map.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,10 @@ import { SeatingMapComponent } from './seating-map/seating-map.component';
     AppRoutingModule,
     MaterialModule
   ],
-  providers: [StudentService],
+  providers: [
+    InstructorService,
+    StudentService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
