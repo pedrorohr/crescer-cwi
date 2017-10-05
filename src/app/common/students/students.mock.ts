@@ -3,7 +3,7 @@ import { Student } from './student.model';
 export const students: Student[] = [
     { id: 0, firstName: 'Pedro', lastName: 'Rohr', user: 'pedro.rohr', phone: '5551998310615', gravatar: '89fc41e15b580a0bb6de64ebd9ad82d0', position: 15 },
     { id: 1, firstName: 'Leandro', lastName: 'Paz', user: 'leandro.paz', phone: '5551999396738', gravatar: '6e23d4a7ad3d7172475d6413263052e3', position: 21 },
-    { id: 2, firstName: 'Luan', lastName: 'Avila', user: 'luan.avila', phone: '5551982580230', gravatar: '', position: 6 },
+    { id: 2, firstName: 'Luan', lastName: 'Avila', user: 'luan.avila', phone: '5551982580230', gravatar: 'd7a98e55d5b8148961b39117ef0baa01', position: 6 },
     { id: 3, firstName: 'Álvaro', lastName: 'Schmidt', user: 'alvaro.schmidt', phone: '5551997562178', gravatar: '', position: 3 },
     { id: 4, firstName: 'Willian', lastName: 'Pazinatto', user: 'william.pazinatto', phone: '5551991135126', gravatar: '', position: 12 },
     { id: 5, firstName: 'Victor', lastName: 'Scherer', user: 'victor.scherer', phone: '5551995566200', gravatar: '', position: 0 },
