@@ -9,7 +9,7 @@ export const students: Student[] = [
     { id: 5, firstName: 'Victor', lastName: 'Scherer', user: 'victor.scherer', phone: '5551995566200', gravatar: '', position: 0 },
     { id: 6, firstName: 'Jacob', lastName: 'Stein', user: 'jacob.stein', phone: '5551993345636', gravatar: '', position: 19 },
     { id: 7, firstName: 'Bel', lastName: 'Cogo', user: 'bel.cogo', phone: '5551989122002', gravatar: '', position: 5 },
-    { id: 8, firstName: 'Bruno', lastName: 'Hoffmann', user: 'bruno.hoffmann', phone: '5551981466564', gravatar: '', position: 4 },
+    { id: 8, firstName: 'Bruno', lastName: 'Hoffmann', user: 'bruno.hoffmann', phone: '5551981466564', gravatar: '192e3b78bceeab342915b48cf6dbda98', position: 4 },
     { id: 9, firstName: 'Francisco', lastName: 'Mossi', user: 'francisco.mossi', phone: '5551982107180', gravatar: '', position: 8 },
     { id: 10, firstName: 'Gustavo', lastName: 'Rodrigues', user: 'gustavo.rodrigues', phone: '5551995408095', gravatar: '', position: 16 },
     { id: 11, firstName: 'Stéffano', lastName: 'Heckler', user: 'steffano.heckler', phone: '5551995453491', gravatar: '', position: 18 },
