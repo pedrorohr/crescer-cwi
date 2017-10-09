@@ -1,4 +1,4 @@
-<img alt="Node.js" src="https://pedrorohr.github.io/crescer-cwi/assets/img/logo-cwi-crescer-01.png" width="300"/>
+<img alt="Crescer" src="https://pedrorohr.github.io/crescer-cwi/assets/img/logo-cwi-crescer-01.png" width="300"/>
 
 Crescer is a responsive web application that presents information about [Projeto Crescer](https://www.cwi.com.br/empresa/crescer), a project from CWI Software.
 
