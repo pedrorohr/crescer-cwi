@@ -10,20 +10,29 @@
         <i material-icon class="crescer-search-icon" [ngClass]="{'crescer-search-icon-focus': searchIconFocus}">search</i>
     </div>
     <div>
-        <mdc-list-group>
-            <mdc-list>
-                <mdc-list-item class="crescer-list-item" [mdc-elevation]="1" *ngFor="let instructor of filteredInstructors">
-                    <img mdc-list-item-start src="https://s.gravatar.com/avatar/{{ instructor.gravatar }}?s=80&d=mm" />
-                    <span mdc-typography-title>{{ instructor.firstName + ' ' + instructor.lastName }}</span>
-                </mdc-list-item>
-            </mdc-list>
-            <mdc-list-divider></mdc-list-divider>
-            <mdc-list>
-                <mdc-list-item class="crescer-list-item" [mdc-elevation]="1" *ngFor="let student of filteredStudents">
-                    <img mdc-list-item-start src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" />
-                    <span mdc-typography-title>{{ student.firstName + ' ' + student.lastName }}</span>
-                </mdc-list-item>
-            </mdc-list>
-        </mdc-list-group>
+        <div *ngIf="filteredInstructors.length > 0">
+            <span mdc-typography-headline>Instructors</span>
+            <div class="crescer-member-group" fxLayout="row" fxLayoutWrap>
+                <div class="crescer-member-card" [mdc-elevation]="1" *ngFor="let instructor of filteredInstructors">
+                    <img [mdc-elevation]="5" src="https://s.gravatar.com/avatar/{{ instructor.gravatar }}?s=80&d=mm" alt="{{ instructor.firstName + ' ' + instructor.lastName }}" />
+                    <div class="crescer-member-card-info">
+                        <div mdc-typography-button class="crescer-member-card-info-name">{{ instructor.firstName + ' ' + instructor.lastName }}</div>
+                        <div mdc-typography-caption class="crescer-member-card-info-user">@{{ instructor.user }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="filteredStudents.length > 0">
+            <span mdc-typography-headline>Students</span>
+            <div class="crescer-member-group" fxLayout="row" fxLayoutWrap>
+                <div class="crescer-member-card" [mdc-elevation]="1" *ngFor="let student of filteredStudents">
+                    <img [mdc-elevation]="5" src="https://s.gravatar.com/avatar/{{ student.gravatar }}?s=80&d=mm" alt="{{ student.firstName + ' ' + student.lastName }}" />
+                    <div class="crescer-member-card-info">
+                        <div mdc-typography-button class="crescer-member-card-info-name">{{ student.firstName + ' ' + student.lastName }}</div>
+                        <div mdc-typography-caption class="crescer-member-card-info-user">@{{ student.user }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

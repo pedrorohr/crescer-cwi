@@ -23,6 +23,44 @@
     color: var(--mdc-theme-primary);
 }
 
+.crescer-member-group {
+    padding-top: 10px;
+}
+
+.crescer-member-card {
+    width: 300px;
+    height: 82px;
+    margin-bottom: 10px;
+    margin-right: 10px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    box-sizing: border-box;
+    padding: 0;
+    border-radius: 2px;
+    overflow: hidden;
+    font-family: Roboto,sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.crescer-member-card img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+.crescer-member-card-info-name {
+    font-size: 1.1rem;
+    line-height: 1rem;
+}
+
 .crescer-list-item {
     border-radius: 4px;
     margin-bottom: 8px;
