@@ -52,7 +52,7 @@ export class SeatingMapComponent implements OnInit {
   }
 
   public getLastRow(): Student[] {
-    return this.getStudentsFilteredAndSorted(18, 24);
+    return this.getStudentsFilteredAndSorted(18, 23);
   }
 
   private getStudentsFilteredAndSorted(initial: number, final: number): Student[] {

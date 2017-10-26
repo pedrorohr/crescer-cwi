@@ -55,6 +55,14 @@ img {
 .crescer-class-floor-plan-seven {
     height: 150px;
     text-align: center;
+
+    img {
+        margin-right: 26px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 .crescer-class-floor-plan-monitor {
@@ -90,6 +98,14 @@ img {
         
     .crescer-class-floor-plan-seven {
         height: 113px;
+
+        img {
+            margin-right: 18px;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
     
     .crescer-class-floor-plan-monitor {
@@ -125,6 +141,14 @@ img {
         
     .crescer-class-floor-plan-seven {
         height: 113px;
+
+        img {
+            margin-right: 12px;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
     
     .crescer-class-floor-plan-monitor {
