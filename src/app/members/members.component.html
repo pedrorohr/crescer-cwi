@@ -1,13 +1,13 @@
 <div class="crescer-container">
     <div class="crescer-search-area">
-        <mdc-textfield
-            class="crescer-search-input"
+        <mdc-textfield-box 
             label="Search member"
+            class="crescer-search-input"
             (focusin)="toggleSearchIcon()"
             (focusout)="toggleSearchIcon()"
             (input)="searchMember($event.target.value)">
-        </mdc-textfield>
-        <i material-icon class="crescer-search-icon" [ngClass]="{'crescer-search-icon-focus': searchIconFocus}">search</i>
+            <mdc-icon class="crescer-search-icon" [ngClass]="{'crescer-search-icon-focus': searchIconFocus}" trailing>search</mdc-icon>
+        </mdc-textfield-box>
     </div>
     <div>
         <div *ngIf="filteredInstructors.length > 0">
